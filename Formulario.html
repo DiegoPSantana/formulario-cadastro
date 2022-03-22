@@ -69,6 +69,22 @@
             border-radius: 10px;
             padding: 8px;
             font-size: 15px;
+            cursor: pointer;
+        }
+
+        #submit{
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90,20,220));
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        #submit:hover{
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
         }
 
     </style>
@@ -99,7 +115,7 @@
                 <input type="radio" id="femenino" name="genero" value="femenino" required>
                 <label for="femenino">Feminino</label> 
                 <br>
-                <input type="radio" id="masculino" name="masculino" value="masculino" required>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
                 <label for="masculino">Masculino</label>
                 <br><br>
                     <label for="data_nascimento"><b>Data de Nascimento:</b></label>
