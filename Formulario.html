@@ -47,6 +47,22 @@
             width: 100%;
             letter-spacing: 2px;
         }
+
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+
     </style>
 </head>
 <body>
@@ -56,25 +72,25 @@
                 <legend><b>Formulário de Cadastro</b></legend>
                 
                 <br>
-                <div class="imputBox">
+                <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome">Nome completo</label>
+                    <label for="nome" class="labelInput">Nome completo</label>
                 </div>
                <br><br> 
                 <div class="inputBox">
                     <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email">Email</label>
+                    <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="tel" id="tel" class="inputUser" required>
-                    <label for="telefone">Telefone</label>
+                    <label for="telefone" class="labelInput">Telefone</label>
                 </div>
                 
                 <p>Sexo: </p>
                 <input type="radio" id="femenino" name="genero" value="femenino" required>
                 <label for="femenino">Feminino</label> 
-
+                <br>
                 <input type="radio" id="masculino" name="masculino" value="masculino" required>
                 <label for="masculino">Masculino</label>
                 <br><br>
@@ -85,17 +101,17 @@
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade">Cidade</label>
+                    <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado">Estado</label>
+                    <label for="estado" class="labelInput">Estado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco">Endereço</label>
+                    <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit"> 
