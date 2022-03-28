@@ -7,6 +7,17 @@
         print_r('Email: ' . $_POST['email']);
         print_r('<br>');
         print_r('Telefone: ' . $_POST['tel']);
+        print_r('<br>');
+        print_r('Sexo:' . $_POST['genero']);
+        print_r('<br>');
+        print_r('Data de Nascimento:' . $_POST['data_nascimento']);
+        print_r('<br>');
+        print_r('Cidade: ' . $_POST['cidade']);
+        print_r('<br>');
+        print_r('Estado :' . $_POST['estado']);
+        print_r('<br>');
+        print_r('Endereço: ' . $_POST['endereco']);
+
     }
 
 ?>
