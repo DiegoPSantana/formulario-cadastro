@@ -104,6 +104,5 @@
             </fieldset>
         </form>
     </div>
-   <script src="validar.php"></script> 
 </body>
 </html>
