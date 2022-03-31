@@ -1,5 +1,4 @@
 <?php
-
     if(isset($_POST['submit']))
     {
         // print_r('Nome: ' . $_POST['nome']);
@@ -40,7 +39,6 @@
     // Dados incluidos do cadastro finalizado
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,6 +104,6 @@
             </fieldset>
         </form>
     </div>
-    
+   <script src="validar.php"></script> 
 </body>
 </html>
