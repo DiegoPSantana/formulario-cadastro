@@ -53,6 +53,7 @@
     </style>
 </head>
 <body>
+    <a href="home.php">Voltar</a>
     <div class="box">
         <form action="Formulario.php" method="POST">
             <fieldset>
@@ -62,6 +63,13 @@
                 <div class="inputBox">
                     <input type="text" name="name" id="name" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
+                    <!-- Após adicionar esse novo campo, criar nova coluna senha no
+                    banco de dados -->
                 </div>
                <br><br> 
                 <div class="inputBox">

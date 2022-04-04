@@ -57,6 +57,8 @@
 </head>
 <body>
 
+        <a href="home.php">Voltar</a>
+
 <div class="tela-login">
     <h1>Login</h1>
 

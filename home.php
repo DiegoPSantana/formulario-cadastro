@@ -36,8 +36,8 @@
 </head>
 <body>
     <div class="box">
-        <a href="">Login</a>
-        <a href="">Cadastre-se</a>
+        <a href="tela-de-login.php">Login</a>
+        <a href="Formulario.php">Cadastre-se</a>
     </div>
 </body>
 </html>
