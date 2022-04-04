@@ -37,7 +37,7 @@
             border-radius: 15px;
         }
 
-        .enviar{
+        .inputSubmit{
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -48,7 +48,7 @@
             cursor: pointer;
         }
 
-        .enviar:hover{
+        .inputSubmit:hover{
             background-color: deepskyblue;
         }
 
@@ -62,11 +62,11 @@
 <div class="tela-login">
     <h1>Login</h1>
 
-    <input type="text" placeholder="Nome" class="nome">
+    <input type="text" placeholder="Email" class="nome">
     <br> <br>
     <input type="password" placeholder="Senha" class="senha">
     <br> <br>
-    <button class="enviar">Enviar</button>
+    <input class="inputSubmit" type="submit" name="submit" value="Enviar">
 </div>
     
 </body>
