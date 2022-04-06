@@ -19,9 +19,16 @@
 
             $result = $conexao->query($sql);
             
-            print_r($sql);
-            print_r('<br>');
-            print_r($result);
+            // print_r($sql);
+            // print_r('<br>');
+            // print_r($result);
+
+            if(mysqli_num_rows($result) < 1){
+               print_r('Não existe');
+            }
+            else{
+               print_r('Existe');
+            }
     }
     else
     {
