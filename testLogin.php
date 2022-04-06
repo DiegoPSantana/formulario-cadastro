@@ -24,10 +24,13 @@
             // print_r($result);
 
             if(mysqli_num_rows($result) < 1){
-               print_r('Não existe');
+               //print_r('Não existe');
+               header('Location: tela-de-login.php');
             }
             else{
-               print_r('Existe');
+               //print_r('Existe');
+
+               header('Location: sistema.php');
             }
     }
     else
