@@ -25,6 +25,7 @@
 
         $name = $_POST['name'];
         $email = $_POST['email'];
+        $senha = $_POST['senha'];
         $telefone = $_POST['tel'];
         $sexo = $_POST['genero'];
         $data_nasc = $_POST['data_nascimento'];
@@ -32,8 +33,8 @@
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, sexo, data_nasc, cidade, estado, endereco) 
-        VALUES ('$name', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco')");
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, senha, email, telefone, sexo, data_nasc, cidade, estado, endereco) 
+        VALUES ('$name', '$senha', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco')");
     }
 
     // Dados incluidos do cadastro finalizado
