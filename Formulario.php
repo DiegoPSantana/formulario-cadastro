@@ -35,6 +35,8 @@
 
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, senha, email, telefone, sexo, data_nasc, cidade, estado, endereco) 
         VALUES ('$name', '$senha', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco')");
+
+        header('Location: tela-de-login.php');
     }
 
     // Dados incluidos do cadastro finalizado
@@ -108,7 +110,7 @@
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
-                <input type="submit" name="submit" id="submit"> 
+                <input type="submit" name="submit" id="submit" value="Cadastrar"> 
 
             </fieldset>
         </form>
